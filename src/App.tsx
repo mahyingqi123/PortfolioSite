@@ -1,31 +1,16 @@
-import { useState } from 'react'
-import selfieImage from './assets/selfie.jpg'
-<img src={selfieImage} alt="Selfie" />
 import './App.css'
+import Home from './Home'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import Tetris from './tetris/Tetris'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://mahyingqi123.github.io/PortfolioSite/" target="_blank">
-          <img src={selfieImage} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Stay tuned for Mah Ying Qi Porfolio</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Work In Progress
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Stay tuned for Mah Ying Qi Porfolio
-      </p>
-    </>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/tetris" element={<Tetris />} />
+      </Routes>
+    </HashRouter>
   )
 }
 
