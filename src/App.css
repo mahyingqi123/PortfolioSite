@@ -5,13 +5,19 @@
   text-align: center;
 }
 
+#download-resume {
+  margin-bottom:2em;
+  height: 2.5em;
+  font-size: 1.5em;
+  background-color: black;
+}
+
 .logo {
   height: 15em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
   border-radius: 20%;
-  margin-bottom: 2em;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -34,8 +40,12 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+.tableauPlaceholder {
+  margin-top:2em
+}
 
 .card {
+  padding-top: 1em;
   padding: 2em;
 }
 

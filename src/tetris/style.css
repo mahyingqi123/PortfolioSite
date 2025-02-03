@@ -101,3 +101,13 @@ svg rect {
   font-weight: bolder;
   text-align: center;
 }
+
+.linkButton {
+  background-color: rgb(255, 216, 165);
+  border-radius: 0.25em;
+  box-shadow: 0em 0em 0.5em rgb(107, 83, 50);
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}

@@ -7,9 +7,7 @@ import { addNewBlockString } from "./utils";
 import {Tick,reduceState, Move, Restart, Rotate, Store} from "./state"
 import { State } from "./type";
 import { useEffect, useRef } from "react";
-
-
-
+import { Link } from "react-router-dom";
   
   // Type definitions
   type Key = "KeyS" | "KeyA" | "KeyD" | "Space" | "KeyW" | "KeyC";
@@ -165,6 +163,7 @@ import { useEffect, useRef } from "react";
   
     return (
       <div id="tetris">
+        <Link to="/" className="linkButton">Back to Home</Link>
         <div className="flex justify-between">
           <span>Level: <span ref={levelTextRef} id="levelText">1</span></span>
           <span>Score: <span ref={scoreTextRef} id="scoreText">0</span></span>
