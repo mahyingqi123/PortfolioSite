@@ -1,4 +1,5 @@
 export {Viewport,Constants,Block,initialState,array}
+import { Matrix, State } from "./type";
 import { newShape } from "./utils";
 
 const Viewport = {
