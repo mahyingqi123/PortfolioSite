@@ -179,12 +179,12 @@ class Tick implements Action {
   updateMatrix = (blocks:ReadonlyArray<SmallBlock>):Matrix=>{
     return blocks
       .reduce((acc,val)=>{
-          return acc.map((row: any[],y: number)=>{
+          return acc.map((row,y)=>{
             return row.map((occupied,x)=>{
               return (occupied)&&(!(x==val.position.x&&y==val.position.y+2))// mark all the position with blocks true
             })
           })},
-        array.map((val: string | any[])=>val.slice()))// make a copy of the original matrix
+        array.map((val)=>val.slice()))// make a copy of the original matrix
 
     }
 
