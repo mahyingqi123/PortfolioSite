@@ -4,7 +4,7 @@ This is my personal portfolio website. It is built using Vite, React, and Tailwi
 
 I am constantly updating this website to showcase my latest projects and skills.
 
-It is hosted using github pages and can be accessed at [https://mahyingqi123.github.io/PorfolioSite]
+It is hosted using github pages and can be accessed at [https://mahyingqi123.github.io/PortfolioSite/]
 
 
 ## Future Expansion
